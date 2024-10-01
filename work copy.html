@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Lizzie Windsor</title>
+<meta charset="UTF-8">
+ <link rel="stylesheet" 
+            href="lizzie2.css">
+</head>
+
+
+<body style="font-family:menlo;background-color:white;">
+<br>
+<div class="topnav">
+
+  <!-- Centered link -->
+  <div class="topnav-centered">
+    <a href="home.html" class="active" style="font-size:48px"><b>Lizzie Windsor</b></a>
+  </div>
+  
+  <!-- Left-aligned links (default) -->
+  <a href="work.html" style="background:#f0dd60">Work</a>
+  <a href="cv.html">CV</a>
+  
+  <!-- Right-aligned links -->
+  <div class="topnav-right">
+    <a href="https://www.instagram.com/lizzie_windsor/">Instagram</a>
+    <a href="https://lizzie-windsor.tumblr.com">Studio</a>
+    <a href="contact.html">Contact</a>
+
+  </div>
+  
+</div>
+<br>
+<br>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Getting Dressed')">Getting Dressed in the Dark</button>
+  <button class="tablinks" onclick="openCity(event, 'Japan')">o(^_-)O</button>
+  <button class="tablinks" onclick="openCity(event, 'No Thanks')">No Thanks, I'll Walk</button>
+  <button class="tablinks" onclick="openCity(event, 'Zines')">Zines</button>
+
+</div>
+
+<div id="Getting Dressed" class="tabcontent">
+  <h3>Getting Dressed in the Dark</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Japan" class="tabcontent">
+  <h3>Japan</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="No Thanks" class="tabcontent">
+  <h3>No Thanks, I'll Walk</h3>
+<figure>
+ <img src="https://64.media.tumblr.com/acc915754f3456e721d63e64b5a5d671/8d05a2c04dcd3bbf-13/s2048x3072/3e0bf6bea3ebb8e0106448e6811f8ea7a559fdad.jpg" 
+ alt="pink" style="width:50%">
+<figcaption>cool horse</figcaption>
+</figure>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<div id="Zines" class="tabcontent">
+  <h3>Zines</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+
+</html>
